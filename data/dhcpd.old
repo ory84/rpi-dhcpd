@@ -1,0 +1,12 @@
+default-lease-time 600;
+max-lease-time 7200;
+option subnet-mask 255.255.255.0;
+option broadcast-address 192.168.73.255;
+#option routers 192.168.73.254;
+#option domain-name-servers 192.168.73.1, 192.168.73.2;
+option domain-name "build.local";
+
+subnet 192.168.73.0 netmask 255.255.255.0 {
+range 192.168.73.100 192.168.73.105;
+range 192.168.73.150 192.168.73.200;
+}
